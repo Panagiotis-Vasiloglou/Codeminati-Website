@@ -8,6 +8,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+nav li:hover {
+    background-color: rgba(224, 121, 84, 0.774);
+}
+
 #text {
     animation: text 1500ms;
     transition: ease;
