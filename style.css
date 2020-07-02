@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    color: rgb(243, 240, 240);
+    font-family: "Roboto", sans-serif;
+}
+
+#text {
+    animation: text 1500ms;
+    transition: ease;
+}
+
+main button:hover {
+    background-color: #252424 !important;
+}
+
+#languages {
+    height: 20vh !important;
+}
+
+#python:hover {
+    content: url("/images/python4.png") !important;
+}
+
+#js:hover {
+    content: url("/images/js4.png") !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #252424;
+    padding: 1rem;
+}
+
+footer a {
+    color: #d35937;
+}
+
+@keyframes text {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
