@@ -33,6 +33,27 @@ main button:hover {
     content: url("/images/js4.png") !important;
 }
 
+#hr {
+    width: 50% !important;
+    margin: 0 auto;
+}
+
+#contact {
+    height: 20vh !important;
+}
+
+.card {
+    margin-bottom: 100px;
+}
+
+.card-body {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Footer */
 
 footer {
