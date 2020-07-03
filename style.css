@@ -47,7 +47,6 @@ main button:hover {
 }
 
 .card-body {
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
