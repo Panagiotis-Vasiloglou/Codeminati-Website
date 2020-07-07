@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to right, #232526, #414345);
+    height: 90vh;
+}
+
+#username,
+#textarea {
+    max-width: 60% !important;
+    margin: auto;
+    font-size: large !important;
+}
+
+#label-1,
+#label-2 {
+    display: block;
+    font-size: x-large;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+.dropdown-menu li:hover {
+    background-color: #d35937a2 !important;
+    display: block;
+}
+
+nav li:hover {
+    background-color: rgba(224, 121, 84, 0.774);
+}
+
+#collapse-1 {
+    background-color: rgb(201, 201, 201);
+}
+
+#collapse-1 a {
+    color: rgb(196, 80, 38);
+}
+
+button {
+    font-size: 1.6rem !important;
+    background-color: #202022ec !important;
+    color: aliceblue !important;
+    border-color: #d35937 !important;
+}

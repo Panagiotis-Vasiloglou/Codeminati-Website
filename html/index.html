@@ -10,29 +10,28 @@
             crossorigin="anonymous"
         />
 
-        <title>Δωρέαν Γνώση Προγραμματισμού</title>
+        <title>Codeminati</title>
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
 
     <body style="background: linear-gradient(to right, #232526, #414345);">
         <!-- Navbar -->
 
         <nav
-            class="navbar navbar-expand-md navbar-dark sticky-top"
+            class="navbar navbar-expand-md navbar-dark "
             style="background-color: #2020227e; color: aliceblue;"
         >
             <div class="container-fluid">
                 <a
-                    href="index.html"
+                    href="/html/index.html"
                     style="text-decoration: none; color: aliceblue;"
-                    ><span class="navbat-text">Codeminati</span></a
+                    ><span class="navbat-text" style="font-size: larger;">Codeminati</span></a
                 >
                 <a href="index.html" class="navbar-brand mr-auto p-1">
-                    <img src="/images/logo2.png" alt="logo" />
                 </a>
                 <button
                     class="navbar-toggler"
@@ -46,14 +45,20 @@
                     <ul class="navbar-nav ml-auto">
                         <li
                             style="font-size: larger;"
-                            class="nav-item active mr-5 p-2 rounded"
+                            class="nav-item dropdown active mr-5 p-2 rounded"
                         >
                             <a
                                 style="text-decoration: none; color: aliceblue;"
-                                href="#"
-                                class="class-link p-2"
+                                id="dropdown"
+                                data-toggle="dropdown"
+                                aria-expanded="true"
+                                class="class-link dropdown-toggle p-2"
                                 >Γλώσσες</a
                             >
+                            <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                <li class="dropdown-item "><a href="/html/javascript.html" class="p-1">Javascript</a></li>
+                                <li class="dropdown-item "><a class="p-1">Python</a></li>
+                            </ul>
                         </li>
                         <li
                             style="font-size: larger;"
@@ -63,7 +68,7 @@
                                 style="text-decoration: none; color: aliceblue;"
                                 href="#"
                                 class="class-link p-2"
-                                >Τεστ Πόρευσης</a
+                                >Ομάδα</a
                             >
                         </li>
                         <li
@@ -72,7 +77,7 @@
                         >
                             <a
                                 style="text-decoration: none; color: aliceblue;"
-                                href="#"
+                                href="/html/contact.html"
                                 class="class-link p-2"
                                 >Επικοινωνία</a
                             >
@@ -84,18 +89,13 @@
 
         <!-- BG HERO MAIN -->
         <main>
-            <div class="container-fluid p-3">
-                <div class="row welcome">
-                    <div id="text" class="col-lg-6 text-center mt-5 pt-5">
-                        <h1
-                            class="display-1 font-weight-bold"
-                            style="color: #aa4528;"
-                        >
-                            Όλοι
-                        </h1>
-                        <h2 class="display-4">έχουν δικαίωμα</h2>
-                        <h2 class="display-4">στην ελεύθερη</h2>
-                        <h2 class="display-4">εκπαίδευση</h2>
+            <div id="hero" class="container-fluid mt-5 pt-5 text-center">
+                <div id="hero-row" class="row welcome mt-5">
+                    <div id="text" class="col-lg-6  text-center  ">
+                        <h4 class="display-4 pl-4">Tα πρώτα σου βήματα</h4>
+                        <h4 class="display-4 pl-4"> στον <span style="color: #D6562D;">προγραμματισμό</span>;</h4>
+                        <h4 class="display-6">Μαζέψαμε για σένα </h4>
+                        <h4 class="display-6" >τις καλύτερες πηγές</h4>
                         <a href="#languages-section"
                             ><button
                                 class="btn btn-primary btn-lg mt-3"
@@ -109,7 +109,7 @@
                             </button></a
                         >
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 ">
                         <img
                             class="img-fluid"
                             src="/images/background2.png"
@@ -119,38 +119,20 @@
                 </div>
             </div>
         </main>
-        <!-- Second paragraph -->
+        <!-- LANGUAGES -->
         <section>
-            <div
-                class="container-fluid border-top border-bottom"
-                style="background-color: rgb(37, 36, 36);"
-            >
-                <div class="row text-center pt-3">
-                    <div class="col-12">
-                        <h1>Αν θες δωρεάν εκπαίδευση στον Προγραμματισμό</h1>
-                        <h3>Μαζέψαμε για εσένα τις καλύτερες πηγές</h3>
-                    </div>
-                    <div class="col-12">
-                        <img
-                            class="img-fluid"
-                            src="/images/robot4.png"
-                            alt="robot image"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROGRAMMING LANGUAGES -->
-        <section>
+            <div class="container-fluid" style="background-color: #252424;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;">
             <div
                 id="languages-section"
-                class="container-fluid text-center pt-4"
+                class="container text-center pt-4"
+                
             >
                 <h2>Επέλεξε την γλώσσα που θες</h2>
 
                 <div class="row">
-                    <div class="col-lg-6 py-5 text-center">
+                    <div class="col-lg-6 pt-5 text-center">
                         <h3>Python</h3>
                         <a href="#"
                             ><img
@@ -160,12 +142,12 @@
                                 alt="Python logo"
                         /></a>
                     </div>
-                    <div class="col-lg-6 py-5 text-center">
+                    <div class="col-lg-6 pt-5 text-center">
                         <h3>Javascript</h3>
-                        <a href="#"
+                        <a href="/html/javascript.html"
                             ><img
                                 id="js"
-                                class="img-fluid"
+                                class="img-fluid my-auto"
                                 src="/images/js3.png"
                                 alt="Javascript logo"
                         /></a>
@@ -177,12 +159,19 @@
                 <div class="python"></div>
                 <div class="js"></div>
             </div>
+            </div>
         </section>
 
+
+        <!-- CARDS -->
+
         <section>
-            <div id="contact" class="container-fluid pb-2">
-                <h1 class="text-center">Επικοινωνία</h1>
-                <hr id="hr" />
+            <div
+                id="contact"
+                class="container-fluid pb-2"
+                "
+            >
+                
             </div>
             <div class="container pt-5">
                 <div class="row text-center">
@@ -214,10 +203,10 @@
                                     alt="robot"
                                 />
                                 <p class="p-4">
-                                    Δες πως μπορείς να μας στείλεις τις δικές
-                                    σου πηγές
+                                    Δες πως μπορείς να βοηθήσεις και να μας
+                                    στείλεις τις δικές σου πηγές
                                 </p>
-                                <a class="btn btn-primary" href="#"
+                                <a class="btn btn-primary" href="/html/contact.html"
                                     >Μάθε περισσότερα</a
                                 >
                             </div>
@@ -226,6 +215,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- FOOTER -->
 
         <footer>
             <div class="container-fluid text-center">

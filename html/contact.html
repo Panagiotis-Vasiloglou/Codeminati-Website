@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        />
+        <title>Επικοινωνία</title>
+        <link rel="stylesheet" href="/css/contact.css" />
+    </head>
+    <body
+        style="
+            color: rgb(230, 230, 230);
+            background: linear-gradient(to right, #232526, #414345);
+        "
+    >
+        <!-- NAVBAR -->
+        <nav
+            class="navbar navbar-expand-md navbar-dark"
+            style="background-color: #2020227e; color: aliceblue;"
+        >
+            <div class="container-fluid">
+                <a
+                    href="index.html"
+                    style="text-decoration: none; color: aliceblue;"
+                    ><span class="navbat-text" style="font-size: larger;"
+                        >Codeminati</span
+                    ></a
+                >
+                <a href="/html/index.html" class="navbar-brand mr-auto p-1">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#links"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="links" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li
+                            style="font-size: larger;"
+                            class="nav-item dropdown active mr-5 p-2 rounded"
+                        >
+                            <a
+                                style="text-decoration: none; color: aliceblue;"
+                                id="dropdown"
+                                data-toggle="dropdown"
+                                aria-expanded="true"
+                                class="class-link dropdown-toggle p-2"
+                                >Γλώσσες</a
+                            >
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdown"
+                            >
+                                <li class="dropdown-item">
+                                    <a href="/html/javascript.html" class="p-1"
+                                        >Javascript</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="p-1">Python</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            style="font-size: larger;"
+                            class="nav-item mr-5 p-2 rounded"
+                        >
+                            <a
+                                style="text-decoration: none; color: aliceblue;"
+                                href="#"
+                                class="class-link p-2"
+                                >Ομάδα</a
+                            >
+                        </li>
+                        <li
+                            style="font-size: larger;"
+                            class="nav-item mr-5 p-2 rounded"
+                        >
+                            <a
+                                style="text-decoration: none; color: aliceblue;"
+                                href="/html/contact.html"
+                                class="class-link p-2"
+                                >Επικοινωνία</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- FORM -->
+        <div class="container mt-5">
+            <h3 class="text-center">Συμπλήρωσε την φόρμα με το e-mail σου</h3>
+            <h3 class="text-center">
+                Και βοήθησε στο έργο μας στέλνοντας πηγές,
+            </h3>
+            <h3 class="text-center">
+                που θες να κοινοποιήσουμε...
+            </h3>
+        </div>
+        <div class="container">
+            <form action="" method="">
+                <div class="form-group mt-5">
+                    <label
+                        id="label-1"
+                        class="form-label text-center"
+                        for="username"
+                        >E-mail</label
+                    >
+                    <input
+                        id="username"
+                        class="form-control"
+                        type="email"
+                        aria-describedby="emailHelp"
+                        required
+                    />
+                    <label
+                        id="label-2"
+                        for="textarea"
+                        class="form-label mt-5 text-center"
+                    >
+                        Το μήνυμά σου</label
+                    >
+                    <textarea
+                        class="form-control"
+                        required
+                        rows="4"
+                        name="textarea"
+                        id="textarea"
+                    ></textarea>
+                    <button
+                        class="text-center mt-5 m-auto d-block btn btn-primary"
+                        type="submit"
+                    >
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,11 +1,26 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 body {
     color: rgb(243, 240, 240);
     font-family: "Roboto", sans-serif;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+.dropdown-menu li:hover {
+    background-color: #d35937a2 !important;
+    display: block;
 }
 
 nav li:hover {
@@ -22,7 +37,7 @@ main button:hover {
 }
 
 #languages {
-    height: 20vh !important;
+    height: 10vh !important;
 }
 
 #python:hover {
@@ -31,11 +46,6 @@ main button:hover {
 
 #js:hover {
     content: url("/images/js4.png") !important;
-}
-
-#hr {
-    width: 50% !important;
-    margin: 0 auto;
 }
 
 #contact {
