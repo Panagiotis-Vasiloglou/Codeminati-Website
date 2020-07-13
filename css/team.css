@@ -1,0 +1,115 @@
+.body {
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+nav {
+    background-color: #20202298 !important;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+.dropdown-menu li:hover {
+    background-color: #d35937a2 !important;
+    display: block;
+}
+
+nav li:hover {
+    background-color: rgba(224, 121, 84, 0.774);
+}
+
+.team-area {
+    background: linear-gradient(to right, #232526, #414345);
+    padding-top: 20px;
+}
+
+.section-heading {
+    text-align: center;
+    color: silver;
+    margin-bottom: 70px;
+    font-size: 65px;
+    font-family: "Roboto";
+    letter-spacing: 5px;
+}
+
+.card-body {
+    border: none;
+    background: rgb(45, 45, 45);
+}
+
+.img-area {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.team-single:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+
+.team-single:hover .side-one {
+    transform: rotateY(180deg);
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(45, 45, 45);
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+    min-height: 312px;
+}
+
+.side-two .card a {
+    font-size: 18px;
+    color: silver;
+}
+
+.h4 {
+    color: silver;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+.card-body {
+    color: silver;
+}
+
+p {
+    font-family: "Roboto";
+    color: silver;
+}
