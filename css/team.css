@@ -44,8 +44,8 @@ nav li:hover {
 }
 
 .img-area {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     overflow: hidden;
     border-radius: 50%;
@@ -91,12 +91,96 @@ nav li:hover {
 
 .side-one .card,
 .side-two .card {
-    min-height: 312px;
+    min-height: 300px;
 }
 
-.side-two .card a {
-    font-size: 18px;
+.list-inline {
+    display: flex;
+}
+
+.list-inline li {
+    position: relative;
+    display: block;
     color: silver;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+.list-inline li:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.list-inline li:nth-child(1):before {
+    background: #306adf;
+}
+
+.list-inline li:nth-child(2):before {
+    background: #e7c21d;
+}
+.list-inline li:nth-child(3):before {
+    background: #cad0db;
+}
+u.list-inline li:nth-child(4):before {
+    background: #e63838;
+}
+
+.list-inline li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+
+.list-inline li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #306adf;
+}
+
+.list-inline li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px #e7c21d;
+}
+
+.list-inline li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #cad0db;
+}
+
+.list-inline li:nth-child(4):hover:before {
+    box-shadow: 0 0 15px #e63838;
+}
+
+.list-inline li:nth-child(1):hover {
+    color: #306adf;
+    box-shadow: 0 0 15px #306adf;
+    text-shadow: 0 0 15px #306adf;
+}
+
+.list-inline li:nth-child(2):hover {
+    color: #e7c21d;
+    box-shadow: 0 0 15px #e7c21d;
+    text-shadow: 0 0 15px #e7c21d;
+}
+.list-inline li:nth-child(3):hover {
+    color: #cad0db;
+    box-shadow: 0 0 15px #cad0db;
+    text-shadow: 0 0 15px #cad0db;
+}
+
+.list-inline li:nth-child(4):hover {
+    color: #e63838;
+    box-shadow: 0 0 15px #e63838;
+    text-shadow: 0 0 15px #e63838;
 }
 
 .h4 {
@@ -112,4 +196,8 @@ nav li:hover {
 p {
     font-family: "Roboto";
     color: silver;
+}
+
+h6 {
+    color: rgb(235, 123, 44);
 }
